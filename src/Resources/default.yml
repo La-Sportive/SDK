@@ -1,0 +1,16 @@
+manager: LaSportive\SDK\Manager\EntrypointManager
+adapter: LaSportive\SDK\Adapter\GuzzleAdapter
+factories:
+  entrypoint: LaSportive\SDK\Factory\EntrypointDefinitionFactory
+  response: LaSportive\SDK\Factory\Response\ResponseFactory
+  collection: LaSportive\SDK\Factory\Collection\CollectionFactory
+
+uri: http://138.68.160.238
+
+entrypoints:
+
+    transaction.commit:
+      name: 'Transaction commit'
+      description: 'Commit a transaction for customer'
+      endpoint: 'session/:token/transaction'
+      method: 'POST'

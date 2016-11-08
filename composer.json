@@ -1,0 +1,29 @@
+{
+  "name": "La-Sportive/SDK",
+  "type": "library",
+  "description": "La Sportive SDK for a fast implementation",
+  "keywords": ["La Sportive", "SDK", "Cashback"],
+  "authors": [
+    {
+      "name": "Michael FORASTE",
+      "email": "michael.foraste@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.14",
+    "symfony/yaml": "^3.1.6",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.4",
+    "mockery/mockery": "^0.9"
+  },
+  "autoload": {
+    "psr-4": { "LaSportive\\SDK\\": "src" }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1-dev"
+    }
+  }
+}
