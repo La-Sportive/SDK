@@ -82,8 +82,8 @@ class Communicator
             'transaction.commit',
             [
                 'token' => $token,
-                'exeternal_reference' => $transaction->getExternalReference(),
-                'cashback_reference' => $transaction->getCashbackReference(),
+                'external_reference' => $transaction->getExternalReference(),
+                'cashback' => $transaction->getCashbackReference(),
                 'label' => $transaction->getLabel(),
                 'amount' => (int) $transaction->getAmount()
             ]
