@@ -2,7 +2,7 @@
 
 namespace LaSportive\SDK\Model;
 
-use LaSportive\APIConnectorBundle\Factory\Entity\EntityFactoryInterface;
+use LaSportive\SDK\Factory\Entity\EntityFactoryInterface;
 use LaSportive\SDK\Entity\Entrypoint;
 
 interface EntrypointModelInterface

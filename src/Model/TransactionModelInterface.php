@@ -90,4 +90,15 @@ interface TransactionModelInterface
      * @return Transaction
      */
     public function setAmount($amount);
+
+    /**
+     * @return string
+     */
+    public function getCashbackReference();
+
+    /**
+     * @param string $cashbackReference
+     * @return Transaction
+     */
+    public function setCashbackReference($cashbackReference);
 }

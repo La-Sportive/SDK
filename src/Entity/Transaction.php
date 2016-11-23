@@ -25,6 +25,11 @@ class Transaction implements TransactionModelInterface
     /**
      * @var string
      */
+    protected $cashbackReference;
+
+    /**
+     * @var string
+     */
     protected $label;
 
     /**
@@ -80,6 +85,24 @@ class Transaction implements TransactionModelInterface
     public function setExternalReference($externalReference)
     {
         $this->externalReference = $externalReference;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCashbackReference()
+    {
+        return $this->cashbackReference;
+    }
+
+    /**
+     * @param string $cashbackReference
+     * @return Transaction
+     */
+    public function setCashbackReference($cashbackReference)
+    {
+        $this->cashbackReference = $cashbackReference;
         return $this;
     }
 

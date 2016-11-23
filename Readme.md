@@ -8,7 +8,7 @@ This SDK is here to help you declare what customers successfully buy on your eco
 
 ## Installation
 
-`composer require La-Sportive/SDK '^0.1'`
+`composer require la-sportive/sdk '^0.1'`
 
 ## Using this SDK
 
@@ -41,12 +41,15 @@ And finally, when you have a confirmed transaction, you can send it to La Sporti
     // Some custom reference for your internal purpose
     $transaction->setExternalReference('REF12354');
     
+    // The cashback you want to apply
+    $transaction->setCashbackReference('CB12354');
+    
     // A custom label
     $transaction->setLabel('Some running shoes');
     
     // The transaction amount in € with no coma. 10.50€ will be set as 1050€
     // So in this exemple this is a 75€ transaction
-    $transaction->setLabel(7500);
+    $transaction->setAmount(7500);
     
     $laSportiveCommunicator->commitTransaction($_SESSION['laSportiveSession'], $transaction);
 ```

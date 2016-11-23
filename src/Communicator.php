@@ -83,6 +83,7 @@ class Communicator
             [
                 'token' => $token,
                 'exeternal_reference' => $transaction->getExternalReference(),
+                'cashback_reference' => $transaction->getCashbackReference(),
                 'label' => $transaction->getLabel(),
                 'amount' => (int) $transaction->getAmount()
             ]
